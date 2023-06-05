@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Modulo 3</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="fw-bolder text-center">Cadastre-se Aqui</h1>
+        <p class="fs-5">Preencha seus dados no formulário abaixo:</p>
+        <form id="form1">
+            <div class="mensagem"></div>
+            <div class="mensagem2"></div>
+            <div class="mensagem3"></div>
+            <input type="text" placeholder="Nome" class="form-control mb-2 obrigatorio" name="Nome">
+            <input type="text" placeholder="Sobrenome" class="form-control mb-2 obrigatorio" name="Sobrenome">
+            <div class="row mb-2">
+                <div class="col">
+                    <input type="text" placeholder="Telefone" class="form-control obrigatorio numero" name="Telefone">
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="E-mail" class="form-control obrigatorio email" name="E-mail">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-10">
+                    <input type="text" placeholder="Endereço" class="form-control obrigatorio" name="Endereço">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Nº" class="form-control obrigatorio numero" name="Nº">
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <input type="text" placeholder="Bairro" class="form-control obrigatorio" name="Bairro">
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Cidade" class="form-control obrigatorio" name="Cidade">
+                </div>
+                <div class="col-3">
+                    <input type="text" placeholder="CEP" class="form-control obrigatorio" name="CEP">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="UF" class="form-control obrigatorio uf" name="UF">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success mt-2 mb-4">Cadastrar</button>
+        </form>  
+
+
+    <script src="./exercicio3.js"></script>
+</body>
+</html>

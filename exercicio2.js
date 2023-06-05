@@ -23,10 +23,10 @@ console.log(cavalo);
 //Resp.: "cinza" - Pois carro tem o valor 'preto', então retorna 'cinza'.
 
 // e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada de 3.000? Demonstre a operação.
-let qntParcelas;
-qntParcelas = valor / prestacao //retornará 40.
+let valorRestante = valor - 3000;
+let qntParcelas = Math.ceil(valorRestante / prestacao);
 console.log("Você precisará pagar " + qntParcelas + " parcelas até quitar o valor do carro.");
-//Resp.: 40 parcelas.
+//Resp.: 36 parcelas.
 
 // f) Somando as variáveis de cores é formada uma string de quantos caracteres?
 let somaCores = branco + preto + cinza;

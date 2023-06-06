@@ -2,8 +2,9 @@
   <p align="center">Modulo 3 - DOM - Document Object Model</p>
   <img width="600" src="https://media.giphy.com/media/3oz8xZvvOZRmKay4xy/giphy.gif" alt="Confused Mark Wahlberg GIF"></a>
 </h1>
-<div style="display: inline_block"><br>
-  <div align="center">
+<div style="display: inline_block">
+    <div align="center">
+   <h3>Tecnologias utilizadas</h3>
     <img align="center" alt="fde95-GIT" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
     <img align="center" alt="fde95-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
     <img align="center" alt="Bootstrap" height="35" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">

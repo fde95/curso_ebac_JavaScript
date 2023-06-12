@@ -43,7 +43,7 @@
  <h2>Autor</h2>
 
    <p>Este projeto foi realizado por <a href="https://linktr.ee/fde95" target="_blank"><b>Felipe Espinoza</b></a> e desenvolvido como parte do curso de Programação JavaScript da EBAC.</p>
-   <p>Agradeço por visitar o repositório do exercício de Conclusão do Modulo 3 - DOM - Document Object Model! 
+   <p>Agradeço por visitar o repositório do exercício de Conclusão do Modulo 4 - jQuery! 
      <br>Fique à vontade para entrar em contato caso tenha alguma dúvida ou sugestão.</p>
   <br>
   <h2>

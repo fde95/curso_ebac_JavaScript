@@ -1,0 +1,142 @@
+*{
+    list-style: none;
+}
+
+header{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,0.20);
+}
+
+#hero{
+    background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    background-position: center;
+}
+.banner .caption {
+    background-color: rgba(250,250,250,0.9);
+    padding: 30px;
+    max-width: 450px;
+    border-radius: 16px;
+}
+.banner .caption h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+.banner .caption .line-dec {
+    width: 30px;
+    height: 5px;
+    background-color: #3a8bcd;
+}
+.banner .caption p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 24px;
+}
+
+
+#products .section-heading{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#products .line-dec {
+    width: 30px;
+    height: 5px;
+    background-color: #3a8bcd;
+}
+
+
+#owl-demo .item{
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid rgba(238, 238, 238);
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.footer-logo{
+    margin: 60px 0 40px;
+}
+.footer-menu{
+    margin-bottom: 40px;
+}
+.footer-menu-list{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.footer-menu-list-item{
+    display: inline-block;
+}
+.footer-menu-list-item-link{
+    text-decoration: none;
+    color: rgb(122, 122, 122);;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-bottom: 2px transparent;
+}
+.footer-menu-list-item-link:hover{
+    color: #3a8bcd;
+    transition: 1s ease;
+    border-bottom: 2px solid #3a8bcd;
+}
+#icon{
+    color: #4a4a4a;
+    transition: 1s ease;
+}
+#icon:hover{
+    color: #3a8bcd;
+    transition: 1s ease;
+}
+.sub-footer p {
+    border-top: 1px solid rgba(238, 238, 238);;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(122, 122, 122);
+    line-height: 60px;
+    align-items: center;
+}
+
+.subscribe-form{
+    padding: 90px 0;
+    background-color: #3a8bcd7c;
+    color: #fff;
+}
+.subscribe-form .line-dec{
+    margin: 0 auto 40px;
+    background-color: #fff;
+    width: 100px;
+    height: 3px;
+}
+.subscribe-form h2, .main-content p{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.modal-body{
+    text-align: justify;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}
+
+

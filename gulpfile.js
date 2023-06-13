@@ -8,6 +8,8 @@ const stripJs = require('gulp-strip-comments');
 const stripCss = require('gulp-strip-css-comments');
 const htmlmin = require('gulp-htmlmin');
 const babel = require('gulp-babel');
+const browserSync = require('browser-sync').create();
+const reload = browserSync.reload;
 
 function styles (){
     return gulp.src([
@@ -68,8 +70,24 @@ function index(){
     .pipe(gulp.dest('./dist'))
 }
 
-exports.default = gulp.parallel(styles, images, scripts, index);
-exports.watch = function(){ //função de monitoramento do Gulp
-    gulp.watch('./src/styles/*.css', gulp.parallel(styles))
-    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))
+gulp.task('server', function(){
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    })
+    gulp.watch('./src/*.html').on('change', gulp.parallel(index, reload))
+    gulp.watch('./src/styles/*.css').on('change', gulp.parallel(styles, reload))
+    gulp.watch('./src/scripts/*.js').on('change',gulp.parallel(scripts, reload))
+})
+
+function end(callback){
+    console.log('Realizando Processos!')
+    return callback()
 }
+
+exports.default = gulp.parallel(styles, images, scripts, index, end);
+// exports.watch = function(){ //função de monitoramento do Gulp
+//     gulp.watch('./src/styles/*.css', gulp.parallel(styles))
+//     gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))
+// }

@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify');
 const image = require('gulp-imagemin');
 const stripJs = require('gulp-strip-comments');
 const stripCss = require('gulp-strip-css-comments');
+const htmlmin = require('gulp-htmlmin');
 
 function styles (){
     return gulp.src([
@@ -57,7 +58,13 @@ function images(){
         .pipe(gulp.dest('./dist/images'))
 }
 
-exports.default = gulp.parallel(styles, images, scripts);
+function index(){
+    return gulp.src('./src/**/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./dist'))
+}
+
+exports.default = gulp.parallel(styles, images, scripts, index);
 exports.watch = function(){ //função de monitoramento do Gulp
     gulp.watch('./src/styles/*.css', gulp.parallel(styles))
     gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))

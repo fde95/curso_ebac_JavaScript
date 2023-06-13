@@ -80,13 +80,25 @@ gulp.task('server', function(){
     gulp.watch('./src/styles/*.css').on('change', gulp.parallel(styles, reload))
     gulp.watch('./src/scripts/*.js').on('change',gulp.parallel(scripts, reload))
 })
+/*Como mencionado durante o vídeo, não temos necessidade de executar a minificação das 
+imagens constantemente, então adicionei o observador apenas nos arquivos HTML, CSS e JS
+Já realizando em paralelo, a minificação dos arquivos para que assim, consigamos realizar
+a observação no arquivo final.
+*/
+
 
 function end(callback){
     console.log('Realizando Processos!')
     return callback()
 }
 
+/*Mantive o default completo em execução paralela com a 
+intenção de melhorar o desempenho durante a execução total.*/
 exports.default = gulp.parallel(styles, images, scripts, index, end);
+
+
+
+//Utilizei durante o módulo anterior.
 // exports.watch = function(){ //função de monitoramento do Gulp
 //     gulp.watch('./src/styles/*.css', gulp.parallel(styles))
 //     gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))

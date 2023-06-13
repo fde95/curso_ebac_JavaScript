@@ -7,6 +7,7 @@ const image = require('gulp-imagemin');
 const stripJs = require('gulp-strip-comments');
 const stripCss = require('gulp-strip-css-comments');
 const htmlmin = require('gulp-htmlmin');
+const babel = require('gulp-babel');
 
 function styles (){
     return gulp.src([
@@ -34,7 +35,10 @@ function scripts (){
         './vendor/Validation/localization/messages_pt_BR.js',
         './src/scripts/*.js'
     ])
-    .pipe(stripJs())
+    .pipe(babel({
+        comments: true,
+        presets: ['@babel/env']
+    }))
         .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min'})) 

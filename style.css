@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form{
+    text-align: center;
+    margin-top: 90px;
+    color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.20);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    
+}
+.form__title{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.form__description{
+    margin-bottom: 20px;
+}
+.form__input{
+    width: 400px;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+.form__btn{
+    cursor: pointer;
+    width: 100px;
+    margin-left: 8px;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    color: #eee;
+    font-weight: bolder;
+    background-color: rgb(77, 77, 77);   
+}
+.form__btn:hover{
+    transition: .3s ease;
+    background-color: rgb(49, 49, 49);
+}
+
+.todo__list{
+    list-style: none;
+    margin-top: 30px;
+}
+.todo__list__item{
+    display:flex;
+    justify-content:center;
+    text-transform: uppercase;
+    color: rgb(77, 77, 77);
+}
+.todo__list__item__btn{
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+.edit{
+    cursor: pointer;
+    color: #ccc;
+}
+.edit:hover{
+    color: rgb(49, 49, 49);
+    transition: .3s ease
+}
+.del{
+    cursor: pointer;
+    color: rgb(253, 88, 88);
+    margin-left: 20px;
+}
+.del:hover{
+    color: rgb(179, 0, 0);
+    transition: .3s ease
+}
